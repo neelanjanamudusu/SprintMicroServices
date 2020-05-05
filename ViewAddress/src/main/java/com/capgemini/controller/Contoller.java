@@ -1,5 +1,7 @@
 package com.capgemini.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,7 @@ public class Contoller {
 	private AddressService s;
 	
 	@GetMapping("/GetAddress/{retailerId}")
-	private AddressDTO getAddresss(@PathVariable("retailerId") int retailerId) {
+	private List<AddressDTO> getAddresss(@PathVariable("retailerId") int retailerId) {
 		return s.getAddress(retailerId);
 }
 }
