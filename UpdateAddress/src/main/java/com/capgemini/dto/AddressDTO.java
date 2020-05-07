@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="AMS")
+@Table(name="address_details")
 public class AddressDTO {
 @Id
 @Column(length=5)

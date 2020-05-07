@@ -10,15 +10,15 @@ import com.capgemini.dto.AddressDTO;
 import com.capgemini.service.AddressService;
 
 @RestController
-@RequestMapping(value="/AddressManagement")
-@CrossOrigin(origins="http://localhost:4000")
+@RequestMapping(value="/Update")
+@CrossOrigin(origins="http://localhost:4200")
 public class Controller{
 	
 	@Autowired 
 	private AddressService s;
 
 	@PutMapping("/UpdateAddress")
-	public AddressDTO UpdateAddress(@RequestBody AddressDTO address) {
+	public AddressDTO updateAddress(@RequestBody AddressDTO address) {
 		return s.updateAddress(address);
 	}
 }

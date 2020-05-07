@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capgemini.service.AddressService;
 
 @RestController
-@RequestMapping("/AddressManagement")
-@CrossOrigin("http://localhost:2400")
+@RequestMapping("/Delete")
+@CrossOrigin("http://localhost:4200")
 public class Controller {
 	@Autowired
 	private AddressService s;

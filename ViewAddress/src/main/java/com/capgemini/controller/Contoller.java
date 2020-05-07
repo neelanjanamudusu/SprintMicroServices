@@ -12,7 +12,7 @@ import com.capgemini.dto.AddressDTO;
 import com.capgemini.service.AddressService;
 
 @RestController
-@RequestMapping("/AddressManagement")
+@RequestMapping("/View")
 @CrossOrigin("http://localhost:4200")
 public class Contoller {
 	@Autowired

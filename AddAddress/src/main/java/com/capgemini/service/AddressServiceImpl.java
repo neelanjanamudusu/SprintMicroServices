@@ -14,7 +14,6 @@ public class AddressServiceImpl implements AddressService{
 
 	@Override
 	public AddressDTO addAddress(AddressDTO address) {
-		// TODO Auto-generated method stub
 		return dao.save(address);
 	}
 	

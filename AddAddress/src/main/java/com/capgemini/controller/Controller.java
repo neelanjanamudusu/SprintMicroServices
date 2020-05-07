@@ -10,15 +10,15 @@ import com.capgemini.dto.AddressDTO;
 import com.capgemini.service.AddressService;
 
 @RestController
-@RequestMapping(value="/AddAddress")
-@CrossOrigin(origins="http://localhost:2000")
+@RequestMapping(value="/Add")
+@CrossOrigin(origins="http://localhost:4200")
 public class Controller{
 	
 	@Autowired 
 	private AddressService s;
 
 	@PostMapping("/AddAddress")
-	public AddressDTO AddAddress(@RequestBody AddressDTO address) {
+	public AddressDTO addAddress(@RequestBody AddressDTO address) {
 		return s.addAddress(address);
 }
 }
