@@ -15,7 +15,7 @@ public class Controller {
 	@Autowired
 	private AddressService s;
 	
-	@DeleteMapping("/DeleteAddress/{retailerId}")
+	@DeleteMapping("/DeleteAddress/{addressId}")
 	private void deleteAddress(@PathVariable("addressId") int addressId) {
 		s.deleteAddress(addressId);
 	}
