@@ -19,7 +19,7 @@ public class Contoller {
 	private AddressService s;
 	
 	@GetMapping("/GetAddress/{retailerId}")
-	private List<AddressDTO> getAddresss(@PathVariable("retailerId") int retailerId) {
+	public List<AddressDTO> getAddresss(@PathVariable("retailerId") int retailerId) {
 		return s.getAddress(retailerId);
 }
 }

@@ -16,7 +16,7 @@ public class Controller {
 	private AddressService s;
 	
 	@DeleteMapping("/DeleteAddress/{addressId}")
-	private void deleteAddress(@PathVariable("addressId") int addressId) {
+	public void deleteAddress(@PathVariable("addressId") int addressId) {
 		s.deleteAddress(addressId);
 	}
 }

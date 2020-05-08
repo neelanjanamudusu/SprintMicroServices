@@ -1,4 +1,5 @@
-/*
+/*package com.capgemini;
+
  * package com.capgemini.EurekaServer;
  * 
  * import org.junit.jupiter.api.Test; import
