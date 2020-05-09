@@ -10,9 +10,9 @@ import javax.persistence.Table;
 public class AddressDTO {
 @Id
 @Column(length=5)
-private int retailerId;
-@Column(length=5)
 private int addressId;
+@Column(length=5)
+private int retailerId;
 @Column(length=50)
 private String housenumber;
 @Column(length=30)
@@ -27,12 +27,12 @@ private String state;
 private Long pincode;
 
 
-public int getRetailorId() {
+public int getRetailerId() {
 	return retailerId;
 }
 
-public void setRetailorId(int retailorId) {
-	this.retailerId = retailorId;
+public void setRetailerId(int retailerId) {
+	this.retailerId = retailerId;
 }
 
 public int getAddressId() {
@@ -91,11 +91,12 @@ public void setPincode(Long pincode) {
 	this.pincode = pincode;
 }
 
-public AddressDTO(int retailorId, int addressId, String housenumber, String streetnumber, String city, String district,
+public AddressDTO( int addressId, int retailerId,String housenumber, String streetnumber, String city, String district,
 		String state, Long pincode) {
 	super();
-	this.retailerId = retailorId;
+	
 	this.addressId = addressId;
+	this.retailerId = retailerId;
 	this.housenumber = housenumber;
 	this.streetnumber = streetnumber;
 	this.city = city;
