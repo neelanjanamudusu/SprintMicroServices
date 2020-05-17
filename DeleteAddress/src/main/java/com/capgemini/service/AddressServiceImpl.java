@@ -10,7 +10,7 @@ public class AddressServiceImpl implements AddressService{
 	private AddressDao dao;
 	@Override
 	public void deleteAddress(int addressId) {
-		 dao.delete(addressId);
+		 dao.deleteById(addressId);
 	}
 
 }
