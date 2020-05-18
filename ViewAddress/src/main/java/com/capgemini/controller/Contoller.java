@@ -22,7 +22,7 @@ import com.capgemini.service.AddressService;
 public class Contoller {
 	@Autowired
 	private AddressService service;
-	
+	//method to view address
 	@GetMapping("/GetAddress/{retailerId}")
 	private ResponseEntity<List<AddressDTO>> getAddress(@PathVariable("retailerId") int retailerId) {
 		List<AddressDTO> result = service.getAddress(retailerId);

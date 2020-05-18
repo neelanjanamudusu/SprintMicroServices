@@ -9,6 +9,7 @@ import com.capgemini.dto.AddressDTO;
 
 @Repository
 public interface AddressDao extends JpaRepository<AddressDTO, Integer>{
+	//query to view address of particular retailerId
    @Query("select b from AddressDTO b where b.retailerId=?1")
 	List<AddressDTO> getAddress(int retailerId);
 

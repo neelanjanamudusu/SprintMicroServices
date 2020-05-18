@@ -20,7 +20,7 @@ import com.capgemini.service.AddressService;
 public class Controller {
 	@Autowired
 	private AddressService service;
-	
+	/*delete address method*/
 	@DeleteMapping("/DeleteAddress/{addressId}")
 	public void deleteAddress(@PathVariable("addressId") int addressId) {
 		service.deleteAddress(addressId);

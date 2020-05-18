@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/*creating a table address_details*/
 		@Entity
 		@Table(name="address_details")
 		public class AddressDTO {

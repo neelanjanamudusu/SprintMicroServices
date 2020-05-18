@@ -13,8 +13,8 @@ public class AddressServiceImpl implements AddressService{
 	@Override
 	public AddressDTO updateAddress(AddressDTO address) {
 		System.out.println(address.getRetailerId());
-		System.out.println(dao.existsById(address.getRetailerId()));
-		if(dao.existsById(address.getAddressId()))
+		System.out.println(dao.existsById(address.getRetailerId()));//checking whether retailerId exist or not
+		if(dao.existsById(address.getAddressId()))  //checking whether addressId exist or not
 			return dao.save(address);
 		else 
 			return null;

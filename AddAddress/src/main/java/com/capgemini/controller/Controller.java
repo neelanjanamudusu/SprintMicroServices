@@ -21,7 +21,7 @@ public class Controller{
 	
 	@Autowired 
 	private AddressService service;
-
+     /*add address method*/
 	@PostMapping("/AddAddress")
 	public ResponseEntity<String> addAddress(@RequestBody AddressDTO address) {
 	AddressDTO result = service.addAddress(address);

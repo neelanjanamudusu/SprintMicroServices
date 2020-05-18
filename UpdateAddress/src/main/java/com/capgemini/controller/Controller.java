@@ -21,7 +21,7 @@ public class Controller{
 	
 	@Autowired 
 	private AddressService service;
-
+/*update address method*/
 	@PutMapping("/UpdateAddress")
 	public ResponseEntity<String> updateAddress(@RequestBody AddressDTO address) {
 		AddressDTO result = service.updateAddress(address);
