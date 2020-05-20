@@ -24,7 +24,7 @@ import org.springframework.http.ResponseEntity;
 //		@Test
 //		public void testdeleteAddress_Positive() throws Exception
 //		{
-//			 String url="http://localhost:"+localServerPort+"Delete/D81";
+//			 String url="http://localhost:"+localServerPort+"Delete/DeleteAddress/81";
 //			  ResponseEntity<String> response = testRestTemplate.exchange(url,HttpMethod.DELETE,null,String.class);
 //			 Assertions.assertEquals(200, response.getStatusCodeValue());
 //		}
@@ -32,7 +32,7 @@ import org.springframework.http.ResponseEntity;
 //		@Test
 //		public void testdeleteAddress_Negative() throws Exception
 //		{
-//			 String url="http://localhost:"+localServerPort+"DeleteAddress/1000";
+//			 String url="http://localhost:"+localServerPort+"Delete/DeleteAddress/1000";
 //			  ResponseEntity<String> response = testRestTemplate.exchange(url,HttpMethod.DELETE,null,String.class);
 //			 Assertions.assertEquals(404, response.getStatusCodeValue());
 //		}
